@@ -1,0 +1,48 @@
+<html>
+<head>
+		<title> 
+		Rock Paper Scissors Game
+		</title>
+	<link rel="stylesheet" href="game.css">
+	<script type = "text/javascript" src="game.js"></script>  
+	<!--Linked stuff//-->
+	
+</head>
+
+
+<body onLoad="welcome()">
+	<h1 id="welcomeHeader"></h1>
+<table>
+  <tr>
+    <th>Your Selection</th>
+    <th> </th>
+    <th>Computer</th>
+  </tr>
+  <tr>
+    <td><input type="radio" id="rock" name="choice" value="Rock">
+	<label for="rock">Rock</label><br>
+	<input type="radio" id="paper" name="choice" value="Paper">
+	<label for="paper">Paper</label><br>
+	<input type="radio" id="scissors" name="choice" value="Scissors">
+	<label for="scissors">Scissors</label></td>
+    <td><button type="button" onclick = "play()">Go!</button></td>
+    <td><div id="com_out1"></div></td>
+  </tr>
+  <tr>
+  	<td>You selected:</td>
+  	<td colspan = "2"><div id="you_sel"></div></td>
+  </tr>
+  <tr>
+  	<td>Computer Randomly Generated:</td>
+  	<td colspan = "2"><div id="com_out2"></div></td>
+  </tr>
+</table>
+<div id="winCount">Wins: 0 time(s) Loss: 0 time(s) Ties: 0 time(s)</div>
+<div id="your_count">History: You have played total: 0 time(s)! </div>
+<div id="your_countChoice">Paper: 0 time(s) & Scissors: 0 time(s) & Rock: 0 time(s)</div>
+
+
+</body>
+
+
+</html>
